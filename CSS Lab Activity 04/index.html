@@ -1,0 +1,61 @@
+<!--Lab Activity 04 CSS-->
+<!--Create by FOO TUN FENG on 15.02.2025-->
+
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Student Profile</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="profile-container">
+			<img src="profile.jpg" alt="Student Photo" class="profile-img">
+			<h1 class="stuedent-name">FOO TUN FENG</h1>
+			<p class="student-info">Information Technology Student</p>
+			<p class="student-description">Enjoy the moment, even it was tough. <br>Good Luck!</p>
+			<button class="contact-btn" onclick="window.open('https://www.instagram.com/tfeng_2235/', 'blank')">Contact Me</button>
+			
+			<!--or-->
+			
+			<!--<a href="https://www.instagram.com/tfeng_2235/" target="_blank">
+					<button class="contact-btn">Contact Me</button>
+				</a>-->
+
+		</div>
+		
+		<!--Q2: New Table for Student Details-->
+		<div class="table-container">
+			<h2>Student Detail</h2>
+			<table class="student-table">
+				<tr>
+					<th>Attribute</th>
+					<th>Details</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>FOO TUN FENG</td>
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>tffoozz0571@gamil.com</td>
+				</tr>
+				<tr>
+					<td>Phone</td>
+					<td>011-2522 3022</td>
+				</tr>
+			</table>
+		</div>
+		
+		
+	</body>
+</html>
+
+<!--
+The target="_blank" attribute works only in <a> (anchor) tags. It has no effect in a <button> element.
+Since you're using window.location.href, it directly changes the current page URL to Instagram (without opening a new tab).-->
