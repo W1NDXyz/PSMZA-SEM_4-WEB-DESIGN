@@ -1,0 +1,96 @@
+Position: for sturcture the web page.
+      - it's for header, navigation, footer...
+
+  1. position: fixed;
+  2. position: flex;
+  3. more...
+
+
+
+Display: controls how an element is shown on the page.
+  1. block              4. flex
+  2. inline             5. grid
+  3. inline-block       6. none
+
+-------------Common display Values & Their Uses:  -----------------
+
+1️⃣ block
+    📌 Takes up the full width of the parent container (new line).
+    📌 Example elements: <div>, <p>, <h1>
+    ✔ Used when you want elements stacked vertically.
+p {
+    display: block; /* Default for <p> */
+}
+
+
+2️⃣ inline
+    📌 Takes up only as much space as the content needs (stays in line with text).
+    📌 Example elements: <span>, <a>, <strong>
+    ✔ Used when you want elements in the same line.
+a {
+    display: inline; /* Default for <a> */
+}
+
+
+3️⃣ inline-block
+    📌 Similar to inline, but allows setting width & height
+    📌 Example: Buttons, icons with text
+    ✔ Used when you want elements to be inline but also adjustable in size.
+
+button {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
+
+
+4️⃣ flex (Flexbox)
+    📌 Makes elements flexible inside a container (great for layouts).
+    📌 Used with justify-content & align-items to control positioning.
+    ✔ Used when creating responsive layouts.
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+🔹 Child elements inside a flex container become "flex items" and follow flex rules.
+
+
+5️⃣ grid (CSS Grid)
+    📌 Divides a container into rows & columns (great for layouts).
+    ✔ Used when creating complex layouts like websites.
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+
+6️⃣ none
+📌 Hides the element (it doesn’t take space on the page).
+✔ Used when you want to remove elements without deleting them.
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
