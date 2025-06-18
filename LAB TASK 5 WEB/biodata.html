@@ -1,0 +1,119 @@
+<!--FOO TUN FENG on 09 April 25-->
+<!--Note Exercise Jquery  Chapter 5 WEB-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery Biodata</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/LabTasks5_Theme3.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<style>
+			#header p{
+				 display: flex; 
+				 justify-content: center; 
+				 font-size: 40px; 
+				 margin: 50px;
+			}
+		
+			#main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;      
+				height: 65vh;             
+				width: 100%;
+				text-align: center;              
+			}
+
+			
+			#main p{
+				display: flex;
+				justify-content: center;
+				margin-top: 80px;
+			}
+			
+			#footer{
+				position: flex;
+				margin-bottom: 0;
+				width: 100%;
+			}
+			
+			#footer p{
+				display: flex;
+				justify-content: center;
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div data-role="page" id="biodata" data-theme="d">
+			<div data-role = "header" id="header" width="100%">
+				<p><strong>Biodata</strong></p>
+				<div data-role="navbar" id="alignment">
+					<ul>
+						<li><a href="home.html" data-icon="home"  rel="external">Home</a></li>
+						<li><a href="biodata.html" data-icon="user" rel="external">Biodata</a></li>
+						<li><a href="hobby.html" data-icon="star"  rel="external">Hobby</a></li>
+						<li><a href="family.html" data-icon="heart"  rel="external">Family</a></li>
+						<li><a href="exam.html" data-icon="bullets"  rel="external">Exam</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div data-role = "content" id="main" class="ui-content">
+				<p>Hi '🙋‍♂️ my name is FOO TUN FENG<br>
+				Call me foo<br>
+				Nice to meet you.🤝<br>
+				👇Want know more about me? 👇</p>
+				
+				<a href="#personal" class="ui-shadow ui-corner-all ui-btn" 
+					data-transition="pop" style="width: 100px;">Click Me</a>
+			</div>
+		
+			<div data-role = "footer" id="footer">
+				<p>Copyright &copy; 2025 | Flag | DFT3013 WEB DESIGN</p>
+			</div>
+		</div>
+		
+		<!------------------------------------------------------------------->
+		<!--Personal-->
+		<div data-role="page" data-dialog="true" id="personal">
+			<div data-role="header" style="text-align:center">
+				<p>Personal Information</p>
+			</div>
+			<div role="main" class="ui-content">
+				<table role="table">
+				<tbody>
+					<tr>
+						<td style="text-align:center;">
+							<img src="image/me.jpg" alt="personal image"
+							style="width:80%; max-width:300px; border-radius:10px"/>
+							<p>this is me👆</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-left:20px;"><p>
+							<b>Name:</b> FOO TUN FENG<br>
+							<b>IC:</b> 050322060571<br>
+							<b>Num Metric:</b> 13DDT23F1052<br>
+							<b>Standpoint:</b> JPP, AVA, SRN<br>
+							<b>Program:</b> DDTS4<br>
+							<b>Diploma:</b> Diploma Information Technology<br>
+							<b>Jambatan:</b> Jambatan Teknologi Maklumat dan Komunikasi(JTMK)<br>
+							<b>Study:</b> Politeknik Sultan Mizan Zainal Abidin (PSMZA)<br>
+						</p></td>
+					</tr>
+					</tbody>
+				</table>
+				<p><a href="#biodata" class="ui-btn ui-corner-all ui-shadow"> Back </a></p>
+			</div>
+		</div>
+		
+	</body>
+
+</html>

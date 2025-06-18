@@ -1,0 +1,240 @@
+<!--FOO TUN FENG on 09 April 25-->
+<!--Note Exercise Jquery  Chapter 5 WEB-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery Hobby</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/LabTasks5_Theme3.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<style>
+			#header p{
+				 display: flex; 
+				 justify-content: center; 
+				 font-size: 40px; 
+				 margin: 50px;
+			}
+		
+			#main{
+				height: 57.9vh;
+				width: 100%;
+			}
+			
+			#main p{
+				display: flex;
+				justify-content: center;
+				margin-top: 80px;
+			}
+			
+			#footer{
+				position: flex;
+				margin-bottom: 0;
+				width: 100%;
+			}
+			
+			#footer p{
+				display: flex;
+				justify-content: center;
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div data-role="page" id="hobby" data-theme="d">
+			<div data-role = "header" id="header" width="100%">
+				<p><strong>Hobby</strong></p>
+				<div data-role="navbar" id="alignment">
+					<ul>
+						<li><a href="home.html" data-icon="home"  rel="external">Home</a></li>
+						<li><a href="biodata.html" data-icon="user" rel="external">Biodata</a></li>
+						<li><a href="hobby.html" data-icon="star"  rel="external">Hobby</a></li>
+						<li><a href="family.html" data-icon="heart"  rel="external">Family</a></li>
+						<li><a href="exam.html" data-icon="bullets"  rel="external">Exam</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div data-role = "content" id="main" class="ui-content" style="text-align:center; margin-top: 60px">
+				<div id="hobby button">
+					<a href="#basket" class="ui-shadow ui-corner-all ui-btn ui-btn-inline" 
+						data-transition="flip"> Basketball </a>
+					<a href="#pingpong" class="ui-shadow ui-corner-all ui-btn ui-btn-inline"
+						data-transition="flip"> Pingpong </a>
+					<a href="#reading" class="ui-shadow ui-corner-all ui-btn ui-btn-inline"
+						data-transition="flip"> Reading </a>
+					<a href="#chess" class="ui-shadow ui-corner-all ui-btn ui-btn-inline"
+						data-transition="flip"> Chess </a>
+					<a href="#cooking" class="ui-shadow ui-corner-all ui-btn ui-btn-inline"
+						data-transition="flip"> Cook </a>
+				</div>
+				<img src="image/dream.jpg" alt="dream picture" 
+				style="padding: 40px; width: 550px; height:auto; border-radius: 20px;">
+			</div>
+			
+		
+			<div data-role = "footer" id="footer">
+				<p>Copyright &copy; 2025 | Flag | DFT3013 WEB DESIGN</p>
+			</div>
+		</div>
+		
+		<!-------------------------------------------------------------------------------------->
+		<!--basket-->
+		<div data-role="page" data-dialog="true" id="basket">
+			<div data-role="header">
+				<h1>My Basketball Journey</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<table role="table">
+					<tbody>
+						<tr>
+							<td style="text-align: center;">
+								<img src="image/31 march 24.jpg" alt="basketball" 
+								style="width: 80%; max-width: 300px;  border-radius: 10px;"/>
+							</td>
+						</tr>
+				
+						<tr>
+							<td><p>  Basketball was the first sport I ever played. 
+							When the ball drops successfully into the basket, it brings a great sense of pride. 
+							If you are also a basketball player, you’ll know exactly how that feels. 
+							Basketball has taught me a lot—leadership, teamwork, discipline, confidence, and more. 
+							Because of my passion, my personal skills are better than many of my peers. 
+							This has given me many opportunities to join games and tournaments. <br>
+							I love basketball.</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		
+		<!-------------------------------------------------------------------------------------->
+		<!--pingpong-->
+		<div data-role="page" data-dialog="true" id="pingpong">
+			<div data-role="header">
+				<h1>Pingpong Time</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<table role="table">
+					<tbody>
+						<tr>
+							<td style="text-align: center;">
+								<img src="image/pingpong.jpg" alt="pingpong" 
+								style="width: 80%; max-width: 300px;  border-radius: 10px;"/>
+							</td>
+						</tr>
+				
+						<tr>
+							<td><p>Pingpong is out family sport.
+							I contecnt with this sport all couse of my family.
+							All of my family members know how to play it. 
+							I very enjoy the family time. But becoming older the count of play was decrease.
+							But I still love it, I hope still have chance to at Feuture University.
+							</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<!-------------------------------------------------------------------------------------->
+		<!--reading-->
+		<div data-role="page" data-dialog="true" id="reading">
+			<div data-role="header">
+				<h1>Reading is a Lifetyle</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<table role="table">
+					<tbody>
+						<tr>
+							<td style="text-align: center;">
+								<img src="image/book.jpg" alt="book" 
+								style="width: 80%; max-width: 300px;  border-radius: 10px;"/>
+							</td>
+						</tr>
+				
+						<tr>
+							<td><p>I love physical book. Thus, this is the primary reason I read.
+							Moreover, the another significant reason is I love the quiet enviroment.
+							Library, an empty classes will always saw my shadow.
+							Someone said: <b>"Reading will lead you to farther and heighter."</b>
+							and my dream is to explore the various world.
+							Therefore, reading become my Livestyle, not just a hobby.
+							</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<!-------------------------------------------------------------------------------------->
+		<!--Chess-->
+		<div data-role="page" data-dialog="true" id="chess">
+			<div data-role="header">
+				<h1>Chess-The only ONE</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<table role="table">
+					<tbody>
+						<tr>
+							<td style="text-align: center;">
+								<img src="image/chess.jpg" alt="chess" 
+								style="width: 80%; max-width: 300px;  border-radius: 10px;"/>
+							</td>
+						</tr>
+				
+						<tr>
+							<td><p>A chess board, two player and chess piceses.
+							I love to think deep, so chess become the game that can gather all my focus and though.
+							Thinking the steps and strategy is the surface of the chess. 
+							I learn a lot from play chess, how to decide the next step, avoid misstake and more.
+							Chess is not a game, it lead out the strategy to step in daily life.
+							Golden quotes of chess: <br>
+							<b>"Two King enter, One King left."</b>
+							</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<!-------------------------------------------------------------------------------------->
+		<!--Cook-->
+		<div data-role="page" data-dialog="true" id="cooking">
+			<div data-role="header">
+				<h1>Cooking</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<table role="table">
+					<tbody>
+						<tr>
+							<td style="text-align: center;">
+								<img src="image/cook.jpg" alt="cooking" 
+								style="width: 80%; max-width: 300px;  border-radius: 10px;"/>
+							</td>
+						</tr>
+				
+						<tr>
+							<td><p>I learn cook is to avoid hungry.
+							But you will always be proud of the food you done by your own.
+							Learn to be healty is always the though before I start to cook.
+							Becouse want to be more healty, 
+							I will avoid to have the fast food or instant noodles.
+							Not only cooking meal, baking also in my favotite.
+							I enjoy to create and cook my healty meal.
+							</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+	</body>
+
+</html>

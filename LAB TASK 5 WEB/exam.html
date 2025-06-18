@@ -1,0 +1,143 @@
+<!--FOO TUN FENG on 09 April 25-->
+<!--Note Exercise Jquery  Chapter 5 WEB-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery Biodata</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/LabTasks5_Theme3.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<style>
+			#header p{
+				 display: flex; 
+				 justify-content: center; 
+				 font-size: 40px; 
+				 margin: 50px;
+			}
+		
+			#main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;      
+				height: 57.9vh;             
+				width: 100%;
+				text-align: center;              
+			}
+			
+			#main p{
+				display: flex;
+				justify-content: center;
+				margin-top: 80px;
+			}
+			
+			.ui-dialog.dialog-actionsheet .ui-dialog-contain {
+				margin-top: 0;
+			}
+			
+			#footer{
+				position: flex;
+				margin-bottom: 0;
+				width: 100%;
+			}
+			
+			#footer p{
+				display: flex;
+				justify-content: center;
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div data-role="page" id="exam" data-theme="d">
+			<div data-role = "header" id="header" width="100%">
+				<p><strong>Exam</strong></p>
+				<div data-role="navbar" id="alignment">
+					<ul>
+						<li><a href="home.html" data-icon="home" rel="external">Home</a></li>
+						<li><a href="biodata.html" data-icon="user" rel="external">Biodata</a></li>
+						<li><a href="hobby.html" data-icon="star" rel="external">Hobby</a></li>
+						<li><a href="family.html" data-icon="heart" rel="external">Family</a></li>
+						<li><a href="exam.html" data-icon="bullets" rel="external">Exam</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div data-role = "content" id="main" class="ui-content" style="margin-top: 60px;">
+				<a href="#pexam" class="ui-shadow ui-corner-all ui-btn" 
+					data-transition="slidedown" style="width: 180px;">Past Semester</a>
+				<a href="#cexam" class="ui-shadow ui-corner-all ui-btn" 
+					data-transition="slidedown" style="width: 180px;">Current Semester</a>
+				
+				<p>Good Luck to every student,<br>who are hardwork prepare their up comming<br>Final Exam on 07 May 2025.<br><br>Wish all of us get our target.</p>
+			</div>
+		
+			<div data-role = "footer" id="footer">
+				<p>Copyright &copy; 2025 | Flag | DFT3013 WEB DESIGN</p>
+			</div>
+		</div>
+		
+		<!------------------------------------------------------------------------------------------->
+		<!--pexam-->
+		<div data-role="page" data-dialog="ture" id="pexam" class="dialog-actionsheet">
+			<div role="main" class="ui-content ui-shadow ui-corner-all ui-btn">
+				<h3>Past Semester Exam Result</h3>
+				<a href="#sem1" class="ui-shadow ui-corner-all ui-btn" data-transition="fade">Semester 1 Result</a>
+				<a href="#sem2" class="ui-shadow ui-corner-all ui-btn" data-transition="fade">Semester 2 Result</a>
+				<a href="#sem3" class="ui-shadow ui-corner-all ui-btn" data-transition="fade">Semester 3 Result</a>
+				<a href="#exam" class="ui-shadow ui-corner-all ui-btn">Back</a>
+			</div>
+		</div>
+		
+		<!--sem1-->
+		<div data-role="page" data-dialog="true" id="sem1">
+			<div data-role="header">
+				<h3>Semester 1 Result</h3>
+			</div>
+			<div data-role="content" role="main" class="ui-content"> 
+			<img src="image/sem1.png" alt="sem1 result" 
+				style="width:100%; max-width:700px; boder-radius:10px;"/>
+			</div>
+		</div>
+		
+		<!--sem2-->
+		<div data-role="page" data-dialog="true" id="sem2">
+			<div data-role="header">
+				<h3>Semester 2 Result</h3>
+			</div>
+			<div data-role="content" role="main" class="ui-content"> 
+			<img src="image/sem2.png" alt="sem2 result" 
+				style="width:100%; max-width:700px; boder-radius:10px;"/>
+			</div>
+		</div>
+		
+		<!--sem3-->
+		<div data-role="page" data-dialog="true" id="sem3">
+			<div data-role="header">
+				<h3>Semester 3 Result</h3>
+			</div>
+			<div data-role="content" role="main" class="ui-content"> 
+			<img src="image/sem3.png" alt="sem3 result" 
+				style="width:100%; max-width:700px; boder-radius:10px;"/>
+			</div>
+		</div>
+		
+		<!----------------------------------------------------------------------------------------------------->
+		<!--exam-->
+		<div data-role="page" data-dialog="true" id="cexam">
+			<div data-role="header">
+				<h3>Semester 4 course</h3>
+			</div>
+			<div data-role="content" role="main" class="ui-content"> 
+			<img src="image/sem4.png" alt="sem 4 course" 
+				style="width:100%; height:200px; max-width:500px; boder-radius:10px;"/>
+			</div>
+		</div>
+	</body>
+
+</html>

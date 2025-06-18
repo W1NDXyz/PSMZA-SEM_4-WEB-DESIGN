@@ -1,0 +1,158 @@
+<!--FOO TUN FENG on 09 April 25-->
+<!--Note Exercise Jquery  Chapter 5 WEB-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery Biodata</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/LabTasks5_Theme3.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<style>
+			#header p{
+				 display: flex; 
+				 justify-content: center; 
+				 font-size: 40px; 
+				 margin: 50px;
+			}
+		
+			#main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;      
+				height: 65vh;             
+				width: 100%;
+				text-align: center;              
+			}
+			
+			#main p{
+				display: flex;
+				justify-content: center;
+				margin-top: 80px;
+			}
+			
+			#footer{
+				position: flex;
+				margin-bottom: 0;
+				width: 100%;
+			}
+			
+			#footer p{
+				display: flex;
+				justify-content: center;
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div data-role="page" id="family" data-theme="d">
+			<div data-role = "header" id="header" width="100%">
+				<p><strong>Family</strong></p>
+				<div data-role="navbar" id="alignment">
+					<ul>
+						<li><a href="home.html" data-icon="home"  rel="external">Home</a></li>
+						<li><a href="biodata.html" data-icon="user" rel="external">Biodata</a></li>
+						<li><a href="hobby.html" data-icon="star"  rel="external">Hobby</a></li>
+						<li><a href="family.html" data-icon="heart"  rel="external">Family</a></li>
+						<li><a href="exam.html" data-icon="bullets"  rel="external">Exam</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div data-role = "content" id="main">
+				<div role="main">
+					<table role="table" class="ui-content">
+					<tbody>
+						<tr>
+							<td><img src="image/family.png" alt="fimaly photo" style="width: auto; height: 500px; border-radius:10px;"/></td>
+							<td style="width: 400px; text-align: left; padding: 50px;">
+								<p>This is my family members. 
+								Yup, the picture as you see, my family just only 4 members including me.
+								You may think it will be very boring right, instead it's not. 
+								We know each others very well, plus we lead our hand to help each others faced their problems.
+								It's very easy to heard the laughing sound between us.<br><br>
+								I am very proud and feel warmth that I am one of the family members.</p>
+							
+							<a href="#sis" data-dialog="true" data-transition="slideup" class="ui-shadow ui-corner-all ui-btn">Sister</a>
+							<a href="#parent" data-dialog="true" data-transition="slideup" class="ui-shadow ui-corner-all ui-btn">Parent</a>
+							</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>			
+			</div>
+		
+			<div data-role = "footer" id="footer">
+				<p>Copyright &copy; 2025 | Flag | DFT3013 WEB DESIGN</p>
+			</div>
+		</div>
+		
+		<!--------------------------------------------------------------------------------------------------------------------------->
+		<!--Sister-->
+		<div data-role="page" data-dialog="true" id="sis">
+			<div data-role="header">
+				<h1>Sister</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<table role="table">
+					<tbody>
+						<tr>
+							<td style="text-align: center;">
+								<img src="image/sis.png" alt="sister" 
+								style="width: 80%; max-width: 300px;  border-radius: 10px;"/>
+							</td>
+						</tr>
+				
+						<tr>
+							<td><p>This, is my young sister. A very sportive person.
+							In shool she played, basketball, pingpong, handball, volyball, track and field and more.
+							This year is ready been cooked by SPM, hahaha. GOOD LUCK.<br><br>
+							When we are outdoor, she is a introvert, but when she is in home the hold 'TAMAN' will heard her voice.
+							Sometime we fighting for no reason, but amity soon. 
+							Our relationship are good enough compare then others family bloodline.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		
+		<!--------------------------------------------------------------------------------------------------------------------------->
+		<!--Parent-->
+				<div data-role="page" data-dialog="true" id="parent">
+			<div data-role="header">
+				<h1>Parent</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<table role="table">
+					<tbody>
+						<tr>
+							<td style="text-align: center;">
+								<img src="image/parent.png" alt="parent" 
+								style="width: 80%; max-width: 300px;  border-radius: 10px;"/>
+							</td>
+						</tr>
+				
+						<tr>
+							<td><p>My mom is a housewife. She handle all house staff. 
+							Additionlly, she is a MasterChef. She really good in cooking and baking.
+							That why cooking and baking be the one of my hobby.<br><br>
+							
+							My dad is a constructor. Also, every income are create by him.
+							My dad had a serious face, all my friend scare to talk with him.
+							But he are profesional to create a marmony enviroment. I call him a emotion controler.
+							</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+
+</html>
