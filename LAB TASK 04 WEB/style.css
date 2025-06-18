@@ -1,0 +1,197 @@
+/*main menu css*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+	height: 100%; 
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+body{
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+
+/*background picture*/
+.background {
+	flex: 1;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url('background.jpg'); 
+    background-size: cover;  /* ensures the image always fills the screen */
+    background-position: center;  
+    background-repeat: no-repeat; /* prevents tiling */
+}
+
+.background::before {
+	content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); 
+    z-index: -1;
+}
+
+.box-container{
+	width: 1000px;
+	padding: 0;
+	margin: 50px auto;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.6); 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+	z-index: 1;
+}
+
+
+.element{
+    align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 100px;
+	display: grid;
+	grid-template-rows: 200px 120px 120px;
+}
+
+/*text*/
+.element h2{
+	font-family: Arial, sans-serif;
+	font-size: 70px;
+	animation: fadeIn 1s ease-in-out;
+	margin: 30px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*button*/
+button, .home-button {
+	width: 300px;
+	height: 94px;
+    padding: 15px 30px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    font-size: 18px;
+    background-color: #4CAF50; 
+	font-family: monospace;
+	font-size: 20px;
+	color: black;
+    border: 2px solid black;
+    border-radius: 13px;
+    cursor: pointer; 
+	pointer-events: auto;
+    transition: background-color 0.4s ease-in-out; 
+	position: relative;
+	z-index: 2;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+button:hover, .home-button:hover{
+	background-color: #d0e3e7;
+}
+
+.home-button {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+}
+
+
+/*footer*/
+footer{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	flex-shrink: 0;
+}
+
+footer p{
+	margin: 0;
+	padding: 10px 0;
+}
+
+
+
+
+/*table css*/
+
+/*input bar*/
+input{
+	height: 60px;
+	width: 500px;
+	border-radius: 5px;
+	margin: 10px auto;
+	font-size: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+#result {
+    margin-top: 0px; 
+    padding: 0;  
+}
+
+#result h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*quiz css*/
+
+/*Questions*/
+#question p{
+	text-align: center;
+	font-size: 45px;
+}
+
+#question{
+	font-size: 40px;
+}
+
+#result{
+	margin-top: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	min-height: 30px;
+}
+
+.correct{
+	color: green;
+}
+
+.wrong{
+	color:red;
+}
